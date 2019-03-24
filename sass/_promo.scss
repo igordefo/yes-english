@@ -1,0 +1,23 @@
+.promo {
+  grid-column: 3 / 4;
+
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  align-items: end;
+
+
+
+  &__bg {
+    width: 100%;
+    margin-top: -15rem;
+  }
+
+  &__btn {
+    margin-top: 10rem;
+    margin-bottom: 4rem;
+  }
+
+  &__text {
+    margin-top: 2.5rem;
+  }
+}
