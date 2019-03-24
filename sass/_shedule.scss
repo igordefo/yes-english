@@ -1,0 +1,14 @@
+.shedule {
+  grid-column: 1 / 4;
+
+  justify-self: end;
+
+  &__wrap {
+    max-width: 75rem;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

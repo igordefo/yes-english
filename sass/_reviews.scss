@@ -1,0 +1,11 @@
+.reviews {
+  grid-column: 3 / 4;
+
+  &__item {
+    margin-right: 16%;
+
+    display: grid;
+    grid-gap: 6.5rem;
+    grid-template-columns: 16rem 1fr;
+  }
+}

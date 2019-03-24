@@ -1,0 +1,11 @@
+.features {
+  grid-column: 3 / 4;
+
+  &__list {
+    max-width: 80rem;
+
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns: 1.8fr 1.5fr 1fr;
+  }
+}

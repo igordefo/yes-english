@@ -1,0 +1,12 @@
+.footer {
+  grid-column: 1 / -1;
+  background-color: $grey;
+}
+
+.centering {
+  max-width: 114rem;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+}

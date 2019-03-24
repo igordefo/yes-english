@@ -1,0 +1,57 @@
+// COLOR VARIABLES
+$font-color: #141414;
+$main-color: #f5112c;
+$accent-color: #2429ff;
+$grey: #f8f8f8;
+
+// FONT VARIABLES
+$font-main: 'Gilroy', sans-serif;
+$font-title: 'Gilroy Bold', sans-serif;
+
+ul {
+  list-style: none;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $font-main;
+  color: $font-color;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 2.8rem;
+  box-sizing: border-box;
+
+}
+
+.container {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: 1fr 4% minmax(min-content, 114rem) 4% 1fr;
+}
+
+.btn {
+  display: block;
+  padding: 2.3rem 3.5rem;
+  outline: 0;
+  border: none;
+  color: #ffffff;
+  font-family: $font-title;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+  letter-spacing: 0.9px;
+  box-shadow: 0 1rem 1.8rem rgba(246, 27, 60, 0.55);
+  border-radius: 3.5rem;
+  background-color: #f5112c;
+}

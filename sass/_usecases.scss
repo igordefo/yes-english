@@ -1,0 +1,65 @@
+.usecases {
+  padding: 10rem 0;
+  grid-column: 3 / 4;
+  position: relative;
+
+  &__title {
+    position: relative;
+  }
+
+  &__title::after {
+    content: "?";
+    position: absolute;
+    opacity: 0.09;
+    color: #000000;
+    font-family: $font-title;
+    font-size: 30rem;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item:not(:last-of-type) {
+    margin-bottom: 2rem;
+  }
+
+  &__item:nth-child(odd) {
+    align-self: flex-end;
+    justify-content: flex-end;
+  }
+
+  &__item:nth-child(2) &__photo:last-child {
+    max-width: 40%;
+  }
+
+  &__item:nth-child(even) &__photo:last-child {
+    order: -1;
+    margin-right: 4rem;
+  }
+
+  &__item:nth-child(odd) &__photo:last-child {
+    margin-left: 2rem;
+  }
+
+  &__number {
+    position: absolute;
+  }
+
+  &__text {
+    max-width: 30rem;
+  }
+
+  &__photo {
+    max-width: 51%;
+    flex: 1 1 40%;
+  }
+}

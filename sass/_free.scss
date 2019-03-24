@@ -1,0 +1,12 @@
+.free {
+  grid-column: 3 / 4;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: end;
+
+  &__image {
+    width: 120%;
+    margin-left: -13rem;
+  }
+}
