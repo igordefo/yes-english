@@ -1,7 +1,18 @@
 .features {
-  grid-column: 3 / 4;
+  margin-top: -5rem;
+  padding: 15rem 0;
+  grid-column: 3 / -1;
+  background-image: url(../img/feature-bg.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 50%;
+
+  &__title {
+    max-width: 51rem;
+  }
 
   &__list {
+    margin-top: 10rem;
     max-width: 80rem;
 
     display: grid;
