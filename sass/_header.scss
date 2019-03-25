@@ -42,15 +42,20 @@
 }
 
 .name {
+  display: flex;
+  justify-content: center;
   width: 100%;
   position: absolute;
   top: 20%;
   opacity: 0.06;
   color: #000000;
   font-family: $font-title;
-  font-size: 23.7rem;
+  font-size: 23rem;
   font-weight: 800;
   letter-spacing: 1rem;
-  text-align: center;
   line-height: 23rem;
+  left: 50%;
+  margin-left: -50%;
+  white-space: nowrap;
+  text-align: center;
 }
