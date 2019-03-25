@@ -10,6 +10,7 @@
 <body>
   <div class="container">
     <header class="header">
+      <span class="name">english yes</span>
       <h1 class="header__logo"><span class="header__dot">.</span>Yes</h1>
       <address class="contacts">
         <p class="contacts__adress hidden-xs">г. Москва ул. Северная, 35</p>
@@ -28,59 +29,61 @@
         <button class="promo__btn btn">Записаться на пробное занятие</button>
       </div>
     </section>
-    <section class="usecases">
+    <div class="clipEllipse">
+    <section class="usecases centering">
       <h2 class="usecases__title main-heading">Бывали ли вы <br> в подобных <br> ситауциях</h2>
       <ul class="usecases__list">
         <li class="usecases__item">
-          <p class="usecases__number">01 <span>.</span></p>
+          <p class="usecases__number main-heading" data-end=".">01</p>
           <p class="usecases__text">Вы думали, что знаете английский, но в гостинице 
             с трудом выговариваете, какой номер вам нужен</p>
           <img class="usecases__photo" src="img/usecase-1.png" alt="Гостиница">
         </li>
         <li class="usecases__item">
-          <p class="usecases__number">02 <span>.</span></p>
+          <p class="usecases__number main-heading" data-end=".">02</p>
           <p class="usecases__text">Вы смогли спросить, 
             до какой станции метро нужно дойти, но не поняли, куда вас отправили</p>
           <img class="usecases__photo" src="img/usecase-2.png" alt="Навигация">
         </li>
         <li class="usecases__item">
-          <p class="usecases__number">03 <span>.</span></p>
+          <p class="usecases__number main-heading" data-end=".">03</p>
           <p class="usecases__text">В аэропорту при любом подозрении на задрежку, вы ищите представителя, 
             хоть как-то говоряшего по-русски</p>
           <img class="usecases__photo" src="img/usecase-3.png" alt="Аэропорт">
         </li>
         <li class="usecases__item">
-          <p class="usecases__number">в итоге...</p>
+          <p class="usecases__number main-heading">в итоге...</p>
           <p class="usecases__text">Все это портит впечатление от отдыха и отбивает желание посещать новые страны</p>
           <img class="usecases__photo" src="img/usecase-4.png" alt="Итог">
         </li>
       </ul>
     </section>
+    </div>
     <section class="features">
-      <h2 class="title">Мы предусмотрели эти ситуации</h2>
+      <h2 class="features__title main-heading">Мы предусмотрели эти ситуации</h2>
       <span class="dash"></span>
       <ul class="features__list">
         <li class="features__item">
-          <h3 class="features__title">Значение</h3>
+          <h3 class="features__title sub-heading">Значение</h3>
           <p class="features__text">Разбираем те ситуации, с которыми сталкивается путешественник</p>
         </li>
         <li class="features__item">
-          <h3 class="features__title">Понимание</h3>
+          <h3 class="features__title sub-heading">Понимание</h3>
           <p class="features__text">Учим объясняться сами и понимать, что говорят другие</p>
         </li>
         <li class="features__item">
-          <h3 class="features__title">Практика</h3>
+          <h3 class="features__title sub-heading">Практика</h3>
           <p class="features__text">Проводим диалоги с преподавателями и носителями языка</p>
         </li>
       </ul>
     </section>
     <section class="teachers">
-      <h2 class="teachers__title">Кто ведет курс</h2>
+      <h2 class="main-heading teachers__title">Кто ведет курс</h2>
       <div class="teachers__list">
         <figure class="teacher">
           <img class="teacher__photo" src="img/teach1.png" alt="#" alt="Алла Ристовская">
           <figcaption class="teacher__description">
-            <h3 class="teacher__heading">Алла Ристовская</h3>
+            <h3 class="teacher__heading sub-heading">Алла Ристовская</h3>
             <p class="teacher__text">Занимается преподаванием английского языка с 2007 года. За 7 лет практики Алла занималась более чем с 80 студентами.
               Очень любит путешествовать: неоднократно бывала зарубежом, проходила практику в США (Нью-Йорк) и Великобритании (Лондон).</p>
           </figcaption>
@@ -88,7 +91,7 @@
         <figure class="teacher">
           <img class="teacher__photo" src="img/teach2.png" alt="#" alt="Анастасия Левчук">
           <figcaption class="teacher__description">
-            <h3 class="teacher__heading">Анастасия Левчук</h3>
+            <h3 class="teacher__heading sub-heading">Анастасия Левчук</h3>
             <p class="teacher__text">Закончила Алтайскую Государственную педагогическую Академию по специальности "теория и методика преподавания иностранных языков и культур".
               Также имеется дополнительная квалификация "переводчик в сфере профессиональной коммуникации".</p>
           </figcaption>
@@ -96,7 +99,7 @@
         <figure class="teacher">
           <img class="teacher__photo" src="img/teach3.png" alt="#" alt="Евгений Пак">
           <figcaption class="teacher__description">
-            <h3 class="teacher__heading">Евгений Пак</h3>
+            <h3 class="teacher__heading sub-heading">Евгений Пак</h3>
             <p class="teacher__text">Сетифицированный спеуиалист (диплом ОмГПУ, TTC в Кембридже, TESOL в Лондоне). Имеет богатый опыт работы на английском языке: от обучения в языковых школах до выполнения функции переводчика на различных конференциях.
               Более года Евгений жил в г. Сиэтл (США).</p>
           </figcaption>
@@ -104,8 +107,9 @@
       </div>
     </section>
     <section class="shedule">
+      <img src="img/big-ben.png" alt="">
       <div class="shedule__wrap">
-        <h2 class="title">Что входит в стоимость</h2>
+        <h2 class="main-heading">Что входит в стоимость</h2>
         <span class="dash"></span>
         <span class="shedule__price">21 000 рублей</span>
         <p class="shedule__text">Вы пройдете 2-месячную программу по 2 занятия в неделю, 
@@ -154,12 +158,12 @@
       </div>
     </section>
     <section class="methods">
-        <h2 class="methods__title">Как все будет проходить</h2>
+        <h2 class="methods__title main-heading">Как все будет проходить</h2>
         <span class="dash"></span>
         <ul class="methods__list">
           <li class="methods__item">
             <div class="method__text">
-              <h2 class="methods__heading"><b>&#8594;</b>Простое запоминание</h2>
+              <h2 class="methods__heading sub-heading"><b>&#8594;</b>Простое запоминание</h2>
               <p class="methods__dsecription">Слова запоминаются в результате упрощенных техник и применения 
                 в спонтанных ситуациях, а не посредством зубрежки</p>
             </div>
@@ -167,21 +171,21 @@
           </li>
           <li class="methods__item">
             <div class="method__text">
-              <h2 class="methods__heading"><b>&#8594;</b>Импровизация и диалоги</h2>
+              <h2 class="methods__heading sub-heading"><b>&#8594;</b>Импровизация и диалоги</h2>
               <p class="methods__dsecription">Форма импровизации позволяет подготовиться к ситуации, когда шаблонные ответы будут неприменимы</p>
             </div>
             <img src="img/method-2.png" alt="Импровизация" class="methods__photo">
           </li>
           <li class="methods__item">
             <div class="method__text">
-              <h2 class="methods__heading"><b>&#8594;</b>Говорим и слушаем</h2>
+              <h2 class="methods__heading sub-heading"><b>&#8594;</b>Говорим и слушаем</h2>
               <p class="methods__dsecription">Прослушивание себя и профессионалов позволит научиться воспринимать чужую речь на слух</p>
             </div>
             <img src="img/method-3.png" alt="Аудирование" class="methods__photo">
           </li>
           <li class="methods__item">
             <div class="method__text">
-              <h2 class="methods__heading"><b>&#8594;</b>Повторение</h2>
+              <h2 class="methods__heading sub-heading"><b>&#8594;</b>Повторение</h2>
               <p class="methods__dsecription">Каждое следующее занятие включает в себя закрепление предыдущих тем и создает базу для прохождения следующих</p>
             </div>
             <img src="img/method-4.png" alt="Повторение" class="methods__photo">
