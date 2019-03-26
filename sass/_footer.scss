@@ -1,6 +1,17 @@
 .footer {
+  padding: 8rem 0;
   grid-column: 1 / -1;
   background-color: $grey;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__info {
+    margin-top: 1.5rem;
+  }
 }
 
 .centering {
@@ -8,4 +19,21 @@
   margin: 0 auto;
   padding-left: 4%;
   padding-right: 4%;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  &__link:not(:last-child) {
+    color: #cbcbcb;
+    margin-right: 2.2rem;
+  }
+
+  &__icon {
+    color: currentColor;
+    height: 3rem;
+    width: 3rem;
+  }
 }
