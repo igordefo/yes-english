@@ -1,8 +1,15 @@
 .methods {
-  grid-column: 3 / 4;
+  grid-column: 1 / -1;
+  padding: 5rem 0;
+  padding-bottom: 22rem;
+  background: radial-gradient(circle,  #f7f7f7 80%, white 80%);
+  background-size: 94%;
+  background-position: center bottom;
 
   &__list {
     display: grid;
+    margin-top: 4.5rem;
+    grid-row-gap: 8rem;
   }
 
   &__item {
@@ -10,6 +17,14 @@
     grid-gap: 3rem;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+  }
+
+  &__item:nth-child(even) {
+    grid-gap: 7rem;
+  }
+
+  &__heading {
+    position: relative;
   }
 
   &__text {
@@ -28,5 +43,13 @@
 
   &__item:nth-child(odd) &__photo:last-child {
     justify-self: end;
+  }
+
+  b {
+    color: $main-color;
+    position: absolute;
+    left: -3.5rem;
+    font-size: 2.5rem;
+    color: #f5112c;
   }
 }
