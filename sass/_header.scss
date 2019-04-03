@@ -5,6 +5,10 @@
   align-items: center;
   padding: 4.5rem 0;
 
+  @include respond(phone) {
+    padding: 2.5rem 0;
+  }
+
   &__logo {
   color: #e4002b;
   font-family: "MuseoSansCyrl";
@@ -33,11 +37,17 @@
     text-decoration: none;
   }
 
-  &__call {
-    text-decoration: none;
-    color: inherit;
-    color: $main-color;
-    border-bottom: 2px solid rgba($main-color, 0.5);
+  &__adress {
+    @include respond(phone) {
+      display: none;
+    }
+  }
+
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, min-content);
+    grid-gap: .5rem;
+    z-index: 0;
   }
 }
 
@@ -58,4 +68,13 @@
   margin-left: -50%;
   white-space: nowrap;
   text-align: center;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+  color: $main-color;
+  border-bottom: 2px solid rgba($main-color, 0.5);
+  display: inline-block;
+  justify-self: center;
 }

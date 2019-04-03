@@ -2,6 +2,11 @@
   grid-column: 3 / 4;
   margin-bottom: 20rem;
 
+  @include respond(phone) {
+    text-align: center;
+    margin-bottom: 9.5rem;
+  }
+
   &__item {
     margin-top: 7.5rem;
     margin-right: 16%;
@@ -10,11 +15,28 @@
     grid-gap: 6.5rem;
     grid-template-columns: auto 1fr;
     align-items: start;
+
+    @include respond(phone) {
+      grid-template-columns: 1fr;
+      grid-gap: 3rem;
+      margin-top: 5rem;
+      margin-right: 0;
+    }
+  }
+
+  &__userphoto {
+    @include respond(phone) {
+      justify-self: center;
+    }
   }
 
 
   &__text {
     margin: 3rem 0;
+
+    @include respond(phone) {
+      margin: 1.5rem 0;
+    }
   }
 
   &__slider {
@@ -23,6 +45,10 @@
     height: 7px;
     border-radius: 4px;
     background-color: #e9e9e9;
+
+    @include respond(phone) {
+      display: none;
+    }
   }
 
   &__slider::before {
@@ -36,4 +62,23 @@
     border-radius: 4px;
     background-color: #f5112c;
   }
+}
+
+.reviews__pagination-item {
+  display: inline-block;
+  margin-top: 30px;
+  margin-right: 28px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #e9e9e9;
+}
+
+.reviews__pagination-item:last-child {
+  margin-right: 0;
+}
+
+.reviews__pagination-item--active {
+  box-shadow: 0 4px 10px rgba(245, 17, 44, 0.58);
+  background-color: #f5112c;
 }

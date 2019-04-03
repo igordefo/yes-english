@@ -1,12 +1,27 @@
 .free {
   grid-column: 3 / 4;
+  margin-bottom: 18rem;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: end;
 
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+    margin-bottom: 13rem;
+  }
+
+  &__text-block {
+    text-align: center;
+  }
+
   &__image {
     width: 120%;
     margin-left: -13rem;
+  }
+
+  &__text {
+    margin: 2.5rem 0 9rem 0;
+    line-height: 2.2rem;
   }
 }
