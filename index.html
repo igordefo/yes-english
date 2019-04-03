@@ -15,7 +15,7 @@
       <address class="contacts">
         <p class="contacts__adress hidden-xs">г. Москва ул. Северная, 35</p>
         <a class="contacts__phone" href="tel:+7945465467">+7 (945) 46-54-67</a>
-        <a class="contacts__call" href="tel:+7945465467">Заказать звонок</a>
+        <a class="link" href="tel:+7945465467">Заказать звонок</a>
       </address>
     </header>
     <section class="promo">
@@ -26,7 +26,7 @@
         </p>
         <span class="dash"></span>
         <p class="promo__text">Освойте английский для путешествий и научитесь объясняться в любой ситуации</p>
-        <button class="promo__btn btn">Записаться на пробное занятие</button>
+        <a class="promo__btn btn">Записаться на пробное занятие</a>
       </div>
     </section>
     <div class="clipEllipse">
@@ -37,32 +37,44 @@
           <p class="usecases__number main-heading" data-end=".">01</p>
           <p class="usecases__text">Вы думали, что знаете английский, но в гостинице 
             с трудом выговариваете, какой номер вам нужен</p>
-          <img class="usecases__photo" src="img/usecase-1.png" alt="Гостиница">
+          <picture class="usecases__photo">
+            <source class="usecases__img" srcset="img/usecase-1-sm.png" media="(max-width: 43em)">
+            <img class="usecases__img" src="img/usecase-1.png" alt="Гостиница">
+          </picture>
         </li>
         <li class="usecases__item">
           <p class="usecases__number main-heading" data-end=".">02</p>
           <p class="usecases__text">Вы смогли спросить, 
             до какой станции метро нужно дойти, но не поняли, куда вас отправили</p>
-          <img class="usecases__photo" src="img/usecase-2.png" alt="Навигация">
+          <picture class="usecases__photo">
+            <source class="usecases__img" srcset="img/usecase-2-sm.png" media="(max-width: 43em)">
+            <img class="usecases__img" src="img/usecase-2.png" alt="Навигация">
+          </picture>
         </li>
         <li class="usecases__item">
           <p class="usecases__number main-heading" data-end=".">03</p>
           <p class="usecases__text">В аэропорту при любом подозрении на задрежку, вы ищите представителя, 
             хоть как-то говоряшего по-русски</p>
-          <img class="usecases__photo" src="img/usecase-3.png" alt="Аэропорт">
+          <picture class="usecases__photo">
+            <source class="usecases__img" srcset="img/usecase-3-sm.png" media="(max-width: 43em)">
+            <img class="usecases__img" src="img/usecase-3.png" alt="Аэропорт">
+          </picture>
         </li>
         <li class="usecases__item">
           <p class="usecases__number main-heading">в итоге...</p>
           <p class="usecases__text">Все это портит впечатление от отдыха и отбивает желание посещать новые страны</p>
-          <img class="usecases__photo" src="img/usecase-4.png" alt="Итог">
+        <picture class="usecases__photo">
+          <source class="usecases__img" srcset="img/usecase-4-sm.png" media="(max-width: 43em)">
+          <img class="usecases__img" src="img/usecase-4.png" alt="Итог">
+        </picture>
         </li>
       </ul>
     </section>
     </div>
     <section class="features">
-      <h2 class="features__title main-heading">Мы предусмотрели эти ситуации</h2>
+      <h2 class="features__heading main-heading">Мы предусмотрели эти ситуации</h2>
       <span class="dash"></span>
-      <ul class="features__list">
+      <ul class="features__list centering">
         <li class="features__item">
           <h3 class="features__title sub-heading">Значение</h3>
           <p class="features__text">Разбираем те ситуации, с которыми сталкивается путешественник</p>
@@ -107,7 +119,10 @@
       </div>
     </section>
     <section class="shedule">
-      <img src="img/big-ben.png" alt="">
+      <picture class="shedule__image-wrap">
+        <source class="shedule__image" srcset="img/big-ben-sm.png" media="(max-width: 43em)">
+        <img class="shedule__image" src="img/big-ben.png" alt="Big Ben">
+      </picture>
       <div class="shedule__wrap">
         <h2 class="main-heading">Что входит в стоимость</h2>
         <span class="dash"></span>
@@ -158,7 +173,8 @@
       </div>
     </section>
     <section class="methods">
-        <h2 class="methods__title main-heading">Как все будет проходить</h2>
+      <div class="centering">
+        <h2 class="methods__title main-heading">Как все будет <br> проходить</h2>
         <span class="dash"></span>
         <ul class="methods__list">
           <li class="methods__item">
@@ -191,20 +207,22 @@
             <img src="img/method-4.png" alt="Повторение" class="methods__photo">
           </li>
         </ul>
+      </div>
     </section>
     <section class="reviews">
       <h2 class="title">Отзывы студентов</h2>
       <span class="dash"></span>
       <article class="reviews__item">
-        <img src="img/user.jpg" alt="User photo" class="reviews__userphoto">
+        <img src="img/user.png" alt="User photo" class="reviews__userphoto">
         <div class="reviews__block">
-          <h4 class="reviews__username">Александра Иванова</h4>
+          <h4 class="reviews__username sub-heading">Александра Иванова</h4>
           <p class="reviews__text">Курс прошел незаметно и оставил после себя только хорошие воспоминания. Нашу группу на постоянной основе вела Алла, Настя и Женя приходили к нам для нарабатывания практики общения.
           Неделю назад были с мужем в Лондоне - хоть люди разные и речь у всех разная, но было так легко и спокойно! Мы ни разу не заблудились, в аэропорту меня водила за собой пожилая пара в качестве переводчика. 
           Спасибо вам, это было очень полезно!</p>
-          <a href="#" class="reviews__usercontact">Вконтакте</a>
+          <a href="#" class="link">Вконтакте</a>
         </div>
       </article>
+      <div class="reviews__slider"></div>
       <ul class="reviews__pagination">
         <li class="reviews__pagination-item"></li>
         <li class="reviews__pagination-item reviews__pagination-item--active"></li>
@@ -213,30 +231,48 @@
     </section>
     <section class="free">
       <img src="img/free.png" alt="Самолет" class="free__image">
-      <free__text-block>
-        <h2 class="title">Бесплатное пробное занятие</h2>
+      <div class="free__text-block">
+        <h2 class="main-heading">Бесплатное <br> пробное занятие</h2>
         <span class="dash"></span>
         <p class="free__text">Приходите на бесплатное первое занятие по теме “аэропорт” и ощутите пользу сразу!</p>
-        <button class="button">Записаться на пробное занятие</button>
-      </free__text-block>
+        <a class="btn">Записаться на пробное занятие</a>
+      </div>
     </section>
     <footer class="footer">
       <div class="centering">
-        <div class="footer__logo">
-          <img class="logo logo--footer" src="img/-yes.png" width="63" height="23" alt="Yes">
-          <p class="footer__info">Школа Английского Языка</p>
-        </div>
-        <div class="footer__nav">
-          <p class="adress">г. Москва ул. Северная, 35</p>
-          <div class="icon-home">
-            <a href="https://vk.com" target="black" class="icon icon-vk"></a>
-            <a href="https://youtube.com" target="black" class="icon icon-yt"></a>
-            <a href="https://instagram.com" target="black" class="icon icon-insta"></a>
-            <a href="https://ok.ru" target="black" class="icon icon-ok"></a>
+        <div class="footer__wrapper">
+          <div class="footer__logo">
+            <img class="logo logo--footer" src="img/-yes.png" width="63" height="23" alt="Yes">
+            <p class="footer__info">Школа Английского Языка</p>
           </div>
-          <div class="contacts contacts--footer">
-            <a class="contacts__phones" href="tel:+7945465467">+7 (945) 46-54-67</a>
-            <a class="contacts__cals">Заказать звонок</a>
+          <div class="footer__nav">
+            <div class="social">
+              <a href="https://vk.com" target="black" class="social__link">
+                <svg class="social__icon">
+                  <use xlink:href="img/sprite.svg#icon-vk"></use>
+                </svg>
+              </a>
+              <a href="https://youtube.com" target="black" class="social__link">
+                <svg class="social__icon">
+                  <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                </svg>
+              </a>
+              <a href="https://instagram.com" target="black" class="social__link">
+                <svg class="social__icon">
+                  <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+              <a href="https://ok.ru" target="black" class="social__link">
+                <svg class="social__icon">
+                  <use xlink:href="img/sprite.svg#icon-odnoklassniki"></use>
+                </svg>
+              </a>
+            </div>
+            <address class="contacts">
+              <p class="contacts__adress">г. Москва ул. Северная, 35</p>
+              <a class="contacts__phone" href="tel:+7945465467">+7 (945) 46-54-67</a>
+              <a class="link" href="tel:+7945465467">Заказать звонок</a>
+            </address>
           </div>
         </div>
       </div>
