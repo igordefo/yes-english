@@ -2,9 +2,10 @@
   grid-column: 1 / -1;
   padding: 5rem 0;
   padding-bottom: 22rem;
-  background: radial-gradient(circle,  #f7f7f7 80%, white 80%);
+  background: radial-gradient(circle,  #f7f7f7 80%, white 80%) center;
   background-size: 94%;
-  background-position: center bottom;
+  width: 100%;
+
 
   @include respond(phone) {
     padding-bottom: 15rem;

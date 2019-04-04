@@ -68,13 +68,25 @@
   margin-left: -50%;
   white-space: nowrap;
   text-align: center;
+
+  @include respond(phone) {
+    display: none;
+  }
 }
 
-.link {
+.link:link,
+.link:visited {
+  height: 2.7rem;
   text-decoration: none;
   color: inherit;
   color: $main-color;
   border-bottom: 2px solid rgba($main-color, 0.5);
   display: inline-block;
   justify-self: center;
+  transition: all 0.4s;
+}
+
+.link:hover,
+.link:active {
+  border-bottom: none;
 }

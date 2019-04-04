@@ -64,6 +64,14 @@
   }
 }
 
+.reviews__pagination {
+  display: none;
+
+  @include respond(phone) {
+    display: block;
+  }
+}
+
 .reviews__pagination-item {
   display: inline-block;
   margin-top: 30px;
